@@ -33,6 +33,15 @@ public class MainActivity2 extends AppCompatActivity {
 
             }
         });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ob1=new Intent(getApplicationContext(), ViewMovie.class);
+                startActivity(ob1);
+
+            }
+        });
+
 
     }
 }
