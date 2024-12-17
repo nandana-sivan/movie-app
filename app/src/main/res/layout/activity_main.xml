@@ -1,44 +1,57 @@
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:gravity="center"
-    android:background="#A2BDBA"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/twotone_animation_24" />
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:text="USERNAME"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp"
-        android:layout_height="wrap_content"/>
+        android:textStyle="bold" />
+
     <EditText
-        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:id="@+id/un"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"/>
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/baseline_person_outline_24" />
 
     <TextView
         android:layout_width="match_parent"
-        android:text="PASSWORD"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp"
-        android:layout_height="wrap_content"/>
+        android:text="PASSWORD"
+        android:textStyle="bold" />
+
     <EditText
-        android:drawableLeft="@drawable/sharp_adb_24"
+        android:id="@+id/pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"/>
-g
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/sharp_adb_24" />
+    g
+
     <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="LOGIN"
-        android:textStyle="bold"
-        android:layout_marginTop="50dp"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
